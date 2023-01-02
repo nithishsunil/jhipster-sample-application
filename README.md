@@ -1,4 +1,4 @@
-# jhipsterSampleApplication
+# myApp
 
 This application was generated using JHipster 7.9.3, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.9.3](https://www.jhipster.tech/documentation-archive/v7.9.3).
 
@@ -117,25 +117,11 @@ JHipster Control Center can help you manage and control your application(s). You
 docker-compose -f src/main/docker/jhipster-control-center.yml up
 ```
 
-### Doing API-First development using openapi-generator-cli
-
-[OpenAPI-Generator]() is configured for this application. You can generate API code from the `src/main/resources/swagger/api.yml` definition file by running:
-
-```bash
-./mvnw generate-sources
-```
-
-Then implements the generated delegate classes with `@Service` classes.
-
-To edit the `api.yml` definition file, you can use a tool such as [Swagger-Editor](). Start a local instance of the swagger-editor using docker by running: `docker-compose -f src/main/docker/swagger-editor.yml up -d`. The editor will then be reachable at [http://localhost:7742](http://localhost:7742).
-
-Refer to [Doing API-First development][] for more details.
-
 ## Building for production
 
 ### Packaging as jar
 
-To build the final jar and optimize the jhipsterSampleApplication application for production, run:
+To build the final jar and optimize the myApp application for production, run:
 
 ```
 ./mvnw -Pprod clean verify
@@ -148,7 +134,7 @@ To ensure everything worked, run:
 java -jar target/*.jar
 ```
 
-Then navigate to [http://localhost:8089](http://localhost:8089) in your browser.
+Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
 
 Refer to [Using JHipster in production][] for more details.
 
@@ -175,12 +161,6 @@ Unit tests are run by [Jest][]. They're located in [src/test/javascript/](src/te
 ```
 npm test
 ```
-
-### Other tests
-
-Performance tests are run by [Gatling][] and written in Scala. They're located in [src/test/gatling](src/test/gatling).
-
-To use those tests, you must install Gatling from [https://gatling.io/](https://gatling.io/).
 
 For more information, refer to the [Running tests page][].
 
@@ -269,7 +249,3 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 [leaflet]: https://leafletjs.com/
 [definitelytyped]: https://definitelytyped.org/
 [angular cli]: https://cli.angular.io/
-[gatling]: https://gatling.io/
-[openapi-generator]: https://openapi-generator.tech
-[swagger-editor]: https://editor.swagger.io
-[doing api-first development]: https://www.jhipster.tech/documentation-archive/v7.9.3/doing-api-first-development/
